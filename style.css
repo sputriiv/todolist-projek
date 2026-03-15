@@ -1,0 +1,115 @@
+/* style.css */
+
+/* 1. Mengatur Background Utama dengan Gradasi Lembut */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    /* Perpaduan warna biru laut lembut ke merah muda pudar */
+    background: linear-gradient(135deg, #e0c3fc 0%, #8ec5fc 100%);
+    display: flex;
+    justify-content: center;
+    align-items: flex-start; /* Agar tidak terlalu ke tengah secara vertikal */
+    min-height: 100vh; /* Memastikan background penuh satu layar */
+    margin: 0;
+    padding-top: 50px;
+}
+
+/* 2. Mengatur Kotak Kontainer (Sedikit Transparan) */
+.container {
+    background: rgba(255, 255, 255, 0.9); /* Putih dengan transparansi 90% */
+    padding: 2.5rem;
+    border-radius: 15px; /* Sudut lebih membulat */
+    box-shadow: 0 10px 25px rgba(0,0,0,0.1); /* Bayangan lebih halus */
+    width: 380px;
+    backdrop-filter: blur(5px); /* Efek blur pada background di belakang kotak */
+}
+
+h2 {
+    text-align: center;
+    color: #4a4a4a;
+    margin-bottom: 25px;
+    font-weight: 600;
+}
+
+/* 3. Input Group */
+.input-group {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 25px;
+}
+
+input {
+    flex: 1;
+    padding: 12px 15px;
+    border: 2px solid #e0e0e0;
+    border-radius: 8px;
+    outline: none;
+    transition: border-color 0.3s;
+}
+
+input:focus {
+    border-color: #8ec5fc; /* Warna outline saat diklik sesuai gradasi */
+}
+
+/* 4. Tombol Tambah dengan Warna Soft */
+button {
+    padding: 12px 20px;
+    background-color: #bb9dfc; /* Ungu soft */
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #a37fdb; /* Ungu sedikit lebih gelap saat hover */
+}
+
+/* 5. Daftar Tugas */
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+li {
+    background: #fff;
+    border-bottom: 1px solid #f0f0f0;
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 8px; /* Sudut list sedikit membulat */
+    margin-bottom: 8px; /* Jarak antar list */
+    transition: all 0.2s;
+}
+
+li:hover {
+    background-color: #fbf9ff; /* Highlight tipis saat kursor di atasnya */
+}
+
+li span {
+    cursor: pointer;
+    flex: 1;
+}
+
+/* Style untuk tugas yang selesai */
+.completed {
+    text-decoration: line-through;
+    color: #b0b0b0;
+}
+
+/* 6. Tombol Hapus */
+.delete-btn {
+    background-color: #ffcccc; /* Merah muda sangat soft */
+    color: #cc0000; /* Tulisan merah tua */
+    padding: 6px 12px;
+    font-size: 12px;
+    border-radius: 6px;
+    font-weight: normal;
+}
+
+.delete-btn:hover {
+    background-color: #ffb3b3;
+}
