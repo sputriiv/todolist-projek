@@ -1,11 +1,8 @@
-/* 1. Pengaturan Background Gradasi Ungu Soft */
+/* 1. Pengaturan Font Keseluruhan & Background */
 body {
-    font-family: 'Quicksand', sans-serif;
-    /* Perpaduan ungu muda ke biru langit yang sangat lembut */
-    background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
-    /* Opsi Ungu yang lebih terasa: */
+    /* Mengatur font Fredoka untuk seluruh halaman */
+    font-family: 'Fredoka', sans-serif; 
     background: linear-gradient(135deg, #E0C3FC 0%, #8EC5FC 100%);
-    
     margin: 0;
     display: flex;
     justify-content: center;
@@ -16,23 +13,23 @@ body {
 
 /* 2. Kotak Kontainer */
 .container {
-    background: rgba(255, 255, 255, 0.9); /* Putih bersih */
+    background: rgba(255, 255, 255, 0.9);
     padding: 30px;
-    border-radius: 25px; /* Sangat bulat agar estetik */
+    border-radius: 25px;
     box-shadow: 0 10px 30px rgba(0,0,0,0.05);
     width: 350px;
 }
 
-/* 3. Font Judul (Fredoka - Bulat) */
+/* 3. Judul */
 h2 {
-    font-family: 'Fredoka', sans-serif;
     color: #5a5a5a;
     font-size: 34px;
     margin-bottom: 25px;
     text-align: center;
+    font-weight: 600;
 }
 
-/* 4. Input & Tombol */
+/* 4. Input & Tombol (Font diatur ulang di sini agar seragam) */
 .input-group {
     display: flex;
     gap: 10px;
@@ -45,7 +42,8 @@ input {
     border: 2px solid #eee;
     border-radius: 12px;
     outline: none;
-    font-family: 'Quicksand', sans-serif;
+    font-family: 'Fredoka', sans-serif; /* Font bulat di input */
+    font-size: 15px;
     transition: 0.3s;
 }
 
@@ -55,12 +53,13 @@ input:focus {
 
 button {
     padding: 12px 20px;
-    background-color: #bb9dfc; /* Ungu Soft */
+    background-color: #bb9dfc;
     color: white;
     border: none;
     border-radius: 12px;
     cursor: pointer;
-    font-weight: bold;
+    font-weight: 600;
+    font-family: 'Fredoka', sans-serif; /* Font bulat di tombol */
     transition: 0.3s;
 }
 
@@ -82,7 +81,9 @@ li {
     justify-content: space-between;
     align-items: center;
     border-radius: 12px;
-    border: 1px solid #f0f0f0;
+    font-family: 'Fredoka', sans-serif; /* Font bulat di list tugas */
+    font-size: 16px;
+    color: #444;
 }
 
 .completed {
@@ -98,4 +99,5 @@ li {
     border-radius: 8px;
     border: none;
     cursor: pointer;
+    font-family: 'Fredoka', sans-serif;
 }
