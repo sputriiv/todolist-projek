@@ -1,7 +1,9 @@
 body {
     font-family: 'Quicksand', sans-serif;
-    /* Gambar Sunset Estetik */
-    background-image: url('https://images.unsplash.com/photo-1470252649358-96940c93f319?q=80&w=1600');
+    
+    /* MENGGUNAKAN GAMBAR SUNSET BARU YANG LEBIH STABIL */
+    background-image: url('https://images.unsplash.com/photo-1501179691627-eeaa65ea017c?q=80&w=1600');
+    
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -11,6 +13,9 @@ body {
     justify-content: center;
     align-items: center;
     min-height: 100vh;
+    
+    /* WARNA CADANGAN (Jika gambar gagal loading, warnanya jadi ungu soft, bukan putih polos) */
+    background-color: #e0c3fc; 
 }
 
 .container {
