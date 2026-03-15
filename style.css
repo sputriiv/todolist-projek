@@ -1,36 +1,48 @@
 /* style.css */
 
-/* 1. Mengatur Background Utama dengan Gradasi Lembut */
+/* 1. Pengaturan Utama & Background Gambar Sunset */
 body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    /* Perpaduan warna biru laut lembut ke merah muda pudar */
-    background: linear-gradient(135deg, #e0c3fc 0%, #8ec5fc 100%);
-    display: flex;
-    justify-content: center;
-    align-items: flex-start; /* Agar tidak terlalu ke tengah secara vertikal */
-    min-height: 100vh; /* Memastikan background penuh satu layar */
+    font-family: 'Quicksand', sans-serif; /* Font body yang bersih dan modern */
+    
+    /* GAMBAR SUNSET YANG SENADA DENGAN FONT WISTERIA */
+    background-image: url('https://images.unsplash.com/photo-1547841199-5d7f19894e67?q=80&w=1600'); 
+    
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    min-height: 100vh;
     margin: 0;
     padding-top: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
 }
 
-/* 2. Mengatur Kotak Kontainer (Sedikit Transparan) */
+/* 2. Kotak Kontainer (Frosted Glass Effect) */
 .container {
-    background: rgba(255, 255, 255, 0.9); /* Putih dengan transparansi 90% */
+    background: rgba(255, 255, 255, 0.7); /* Transparan agar sunset terlihat */
     padding: 2.5rem;
-    border-radius: 15px; /* Sudut lebih membulat */
-    box-shadow: 0 10px 25px rgba(0,0,0,0.1); /* Bayangan lebih halus */
+    border-radius: 20px; /* Sudut lebih membulat */
+    box-shadow: 0 10px 30px rgba(0,0,0,0.15);
     width: 380px;
-    backdrop-filter: blur(5px); /* Efek blur pada background di belakang kotak */
+    backdrop-filter: blur(12px); /* Efek buram kaca yang lebih kuat */
 }
 
+/* 3. Pengaturan Judul (FONT BULAT MIRIP WISTERIA) */
 h2 {
     text-align: center;
-    color: #4a4a4a;
+    color: #4a4a4a; /* Abu tua agar tidak terlalu kontras */
     margin-bottom: 25px;
-    font-weight: 600;
+    
+    /* MENGGUNAKAN FONT FREDOKA (ROUNDED) */
+    font-family: 'Fredoka', sans-serif; 
+    font-size: 36px; /* Ukuran besar supaya terlihat jelas */
+    letter-spacing: 1.5px; /* Jarak antar huruf sedikit lebar agar estetik */
+    text-transform: capitalize; /* Huruf depan otomatis besar */
 }
 
-/* 3. Input Group */
+/* 4. Input Group */
 .input-group {
     display: flex;
     gap: 10px;
@@ -41,32 +53,34 @@ input {
     flex: 1;
     padding: 12px 15px;
     border: 2px solid #e0e0e0;
-    border-radius: 8px;
+    border-radius: 10px; /* Sudut bulat */
     outline: none;
-    transition: border-color 0.3s;
+    transition: all 0.3s;
+    font-family: 'Quicksand', sans-serif;
 }
 
 input:focus {
-    border-color: #8ec5fc; /* Warna outline saat diklik sesuai gradasi */
+    border-color: #bb9dfc; /* Ungu soft sesuai nuansa wisteria */
 }
 
-/* 4. Tombol Tambah dengan Warna Soft */
+/* 5. Tombol Tambah (Warna Soft) */
 button {
     padding: 12px 20px;
     background-color: #bb9dfc; /* Ungu soft */
     color: white;
     border: none;
-    border-radius: 8px;
+    border-radius: 10px;
     cursor: pointer;
-    font-weight: bold;
+    font-weight: 600;
+    font-family: 'Quicksand', sans-serif;
     transition: background-color 0.3s;
 }
 
 button:hover {
-    background-color: #a37fdb; /* Ungu sedikit lebih gelap saat hover */
+    background-color: #a37fdb;
 }
 
-/* 5. Daftar Tugas */
+/* 6. Daftar Tugas */
 ul {
     list-style: none;
     padding: 0;
@@ -74,24 +88,26 @@ ul {
 }
 
 li {
-    background: #fff;
-    border-bottom: 1px solid #f0f0f0;
+    background: rgba(255, 255, 255, 0.8);
+    border-radius: 10px; /* Sudut membulat */
     padding: 15px;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    border-radius: 8px; /* Sudut list sedikit membulat */
-    margin-bottom: 8px; /* Jarak antar list */
+    margin-bottom: 10px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
     transition: all 0.2s;
 }
 
 li:hover {
-    background-color: #fbf9ff; /* Highlight tipis saat kursor di atasnya */
+    background-color: #fbf9ff;
+    transform: translateY(-2px); /* Sedikit terangkat saat hover */
 }
 
 li span {
     cursor: pointer;
     flex: 1;
+    font-size: 16px;
 }
 
 /* Style untuk tugas yang selesai */
@@ -100,13 +116,13 @@ li span {
     color: #b0b0b0;
 }
 
-/* 6. Tombol Hapus */
+/* 7. Tombol Hapus */
 .delete-btn {
     background-color: #ffcccc; /* Merah muda sangat soft */
-    color: #cc0000; /* Tulisan merah tua */
+    color: #cc0000;
     padding: 6px 12px;
     font-size: 12px;
-    border-radius: 6px;
+    border-radius: 8px;
     font-weight: normal;
 }
 
