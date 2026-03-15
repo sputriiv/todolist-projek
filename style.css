@@ -1,97 +1,11 @@
-body {
-    font-family: 'Quicksand', sans-serif;
-    
-    /* MENGGUNAKAN GAMBAR SUNSET BARU YANG LEBIH STABIL */
-    background-image: url('https://images.unsplash.com/photo-1501179691627-eeaa65ea017c?q=80&w=1600');
-    
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    margin: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh;
-    
-    /* WARNA CADANGAN (Jika gambar gagal loading, warnanya jadi ungu soft, bukan putih polos) */
-    background-color: #e0c3fc; 
-}
-
-.container {
-    background: rgba(255, 255, 255, 0.75);
-    padding: 30px;
-    border-radius: 25px;
-    box-shadow: 0 10px 30px rgba(0,0,0,0.2);
-    width: 350px;
-    backdrop-filter: blur(10px);
-    text-align: center;
-}
-
-/* FONT JUDUL SEPERTI GAMBAR WISTERIA */
-h2 {
-    font-family: 'Fredoka', sans-serif;
-    color: #4a4a4a;
-    font-size: 38px;
-    margin-bottom: 20px;
-    letter-spacing: 1px;
-}
-
-.input-group {
-    display: flex;
-    gap: 8px;
-    margin-bottom: 20px;
-}
-
-input {
-    flex: 1;
-    padding: 12px;
-    border: none;
-    border-radius: 12px;
-    outline: none;
-    font-family: 'Quicksand', sans-serif;
-}
-
-button {
-    padding: 12px 18px;
-    background-color: #bb9dfc;
-    color: white;
-    border: none;
-    border-radius: 12px;
-    cursor: pointer;
-    font-weight: bold;
-    transition: 0.3s;
-}
-
-button:hover {
-    background-color: #a37fdb;
-}
-
-ul {
-    list-style: none;
-    padding: 0;
-}
-
-li {
-    background: white;
-    margin-bottom: 10px;
-    padding: 12px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    border-radius: 12px;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
-}
-
-.completed {
-    text-decoration: line-through;
-    color: #aaa;
-}
-
-.delete-btn {
-    background-color: #ffb3b3;
-    color: #cc0000;
-    padding: 5px 10px;
-    font-size: 11px;
-    border-radius: 8px;
-}
+body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; background-color: #f4f4f9; display: flex; justify-content: center; padding-top: 50px; }
+.container { background: white; padding: 2rem; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.1); width: 350px; }
+h2 { text-align: center; color: #333; }
+.input-group { display: flex; gap: 5px; margin-bottom: 20px; }
+input { flex: 1; padding: 10px; border: 1px solid #ddd; border-radius: 4px; }
+button { padding: 10px; background: #28a745; color: white; border: none; border-radius: 4px; cursor: pointer; }
+button:hover { background: #218838; }
+ul { list-style: none; padding: 0; }
+li { background: #fff; border-bottom: 1px solid #eee; padding: 10px; display: flex; justify-content: space-between; align-items: center; }
+.completed { text-decoration: line-through; color: gray; }
+.delete-btn { background: #dc3545; padding: 5px 8px; font-size: 12px; }
