@@ -7,23 +7,15 @@ function addTask() {
 
     const li = document.createElement('li');
     li.innerHTML = `
-        <span onclick="toggleTask(this)">${taskValue}</span>
-        <button class="delete-btn" onclick="deleteTask(this)">Hapus</button>
+        <span onclick="this.classList.toggle('completed')">${taskValue}</span>
+        <button class="delete-btn" onclick="this.parentElement.remove()">Hapus</button>
     `;
     
     list.appendChild(li);
-    input.value = ""; // Reset input
+    input.value = "";
 }
 
-function toggleTask(element) {
-    element.classList.toggle('completed');
-}
-
-function deleteTask(element) {
-    element.parentElement.remove();
-}
-
-// Fitur enter untuk menambah tugas
+// Tambah tugas pakai Enter
 input.addEventListener("keypress", function(event) {
     if (event.key === "Enter") {
         addTask();
